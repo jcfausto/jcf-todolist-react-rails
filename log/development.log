@@ -1,0 +1,2314 @@
+  [1m[36m (1.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL) [0m
+  [1m[35m (0.7ms)[0m  select sqlite_version(*)
+  [1m[36m (1.6ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+Migrating to CreateTodos (20150329035334)
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (1.1ms)[0m  CREATE TABLE "todos" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "description" varchar, "completed_at" datetime, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20150329035334"]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Migrating to DeviseCreateUsers (20150329035357)
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/jcfausto/code/rails/vrails/code/react-todolist/db/migrate/20150329035357_devise_create_users.rb:34)
+  [1m[35m (0.5ms)[0m  CREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "created_at" datetime, "updated_at" datetime) 
+  [1m[36m (0.4ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150329035357"]]
+  [1m[36m (1.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for ::1 at 2015-09-24 12:54:09 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TodosController#index as HTML
+  [1m[35mTodo Load (0.6ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 2056ms (Views: 2038.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started GET "/assets/application-295722b658a6a8b92154bd8dd0f3f9ed.js?body=1" for ::1 at 2015-09-24 12:54:11 -0300
+
+
+Started POST "/todos" for ::1 at 2015-09-24 12:54:30 -0300
+Processing by TodosController#create as JSON
+  Parameters: {"utf8"=>"✓", "todo"=>{"description"=>"Aprender a criar aplicações rails com reactJS"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  INSERT INTO "todos" ("description", "created_at", "updated_at") VALUES (?, ?, ?)  [["description", "Aprender a criar aplicações rails com reactJS"], ["created_at", "2015-09-24 15:54:30.386077"], ["updated_at", "2015-09-24 15:54:30.386077"]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+  Rendered todos/show.json.jbuilder (4.6ms)
+Completed 201 Created in 53ms (Views: 31.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 12:56:30 -0300
+Processing by TodosController#index as HTML
+  Rendered todos/index.html.erb within layouts/application (60.6ms)
+Completed 500 Internal Server Error in 101ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (undefined method `signed_in?' for nil:NilClass):
+    1: <% if current_user.signed_in? %>
+    2: 	<%= react_component "TodoApp", todos: @todos %>
+    3: <% end %>
+  app/views/todos/index.html.erb:1:in `_app_views_todos_index_html_erb__878644674567617526_70254186339440'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (13.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (110.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (74.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (176.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 12:57:06 -0300
+Processing by TodosController#index as HTML
+  Rendered todos/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 161ms (Views: 153.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/assets/application-295722b658a6a8b92154bd8dd0f3f9ed.js?body=1" for ::1 at 2015-09-24 12:57:06 -0300
+
+
+Started GET "/users/sign_up" for ::1 at 2015-09-24 12:57:12 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (2.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.4.1/app/views/devise/registrations/new.html.erb within layouts/application (46.4ms)
+Completed 200 OK in 158ms (Views: 142.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/users" for ::1 at 2015-09-24 12:57:32 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PDc4WPHgHSX1uPZ1tJnh3RS4UuM2Ks42CADu6mVAK6UjdauDu60/GJZN/KSZ6Eyd4nAbKz/hLRYcx1Q9OhNY/Q==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mUser Exists (0.9ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'jcfausto@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (1.5ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "jcfausto@gmail.com"], ["encrypted_password", "$2a$10$sxzj/iAO9N0ULi5OWrjFJu.FEtjyqWiAk8NbMwKK/abMDDKlo2Mma"], ["created_at", "2015-09-24 15:57:32.458561"], ["updated_at", "2015-09-24 15:57:32.458561"]]
+  [1m[36m (1.5ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-09-24 15:57:32.465828"], ["current_sign_in_at", "2015-09-24 15:57:32.465828"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-09-24 15:57:32.467606"], ["id", 1]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 154ms (ActiveRecord: 5.7ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 12:57:32 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.2ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/index.html.erb within layouts/application (4.6ms)
+Completed 200 OK in 92ms (Views: 90.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/assets/application-295722b658a6a8b92154bd8dd0f3f9ed.js?body=1" for ::1 at 2015-09-24 12:57:32 -0300
+
+
+Started GET "/" for ::1 at 2015-09-24 13:05:02 -0300
+
+SyntaxError (/Users/jcfausto/code/rails/vrails/code/react-todolist/app/models/user.rb:7: syntax error, unexpected ':', expecting keyword_end
+  has_many: :todos
+           ^):
+  app/models/user.rb:7: syntax error, unexpected ':', expecting keyword_end
+  config/routes.rb:2:in `block in <top (required)>'
+  config/routes.rb:1:in `<top (required)>'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (9.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (88.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (75.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (165.1ms)
+  [1m[36mActiveRecord::SchemaMigration Load (1.0ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddUserToTodo (20150924160940)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (1.4ms)[0m  [1mALTER TABLE "todos" ADD "user_id" integer[0m
+  [1m[35m (0.1ms)[0m  select sqlite_version(*)
+  [1m[36m (1.2ms)[0m  [1mCREATE  INDEX "index_todos_on_user_id" ON "todos" ("user_id")[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20150924160940"]]
+  [1m[36m (2.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (1.0ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_todos_on_user_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_todos_on_user_id' AND type='index'
+[0m
+  [1m[35m (0.1ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_reset_password_token' AND type='index'
+
+  [1m[36m (0.1ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_users_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_users_on_email' AND type='index'
+[0m
+  [1m[36mTodo Load (0.7ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mUser Load (1.9ms)[0m  SELECT "users".* FROM "users"
+  [1m[36mUser Load (0.9ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (3.3ms)[0m  [1mUPDATE "todos" SET "user_id" = ?, "updated_at" = ? WHERE "todos"."id" = ?[0m  [["user_id", 1], ["updated_at", "2015-09-24 16:11:31.275395"], ["id", 1]]
+  [1m[35m (0.9ms)[0m  commit transaction
+
+
+Started GET "/" for ::1 at 2015-09-24 13:12:39 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (15.7ms)
+Completed 200 OK in 183ms (Views: 135.8ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started GET "/assets/application-295722b658a6a8b92154bd8dd0f3f9ed.js?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:12:40 -0300
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:12:42 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"8r9Ao9iGT/+sfdPfJxmH5tFAiAHJUd/ofPTQUgGS9yPt/dN4ksttws+I2Q4KaCqmJ4jBycCaPMhoM2qFXsGEew=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:12:42 -0300
+Processing by TodosController#index as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `todos' for nil:NilClass):
+  app/controllers/todos_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (156.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:14:17 -0300
+Processing by TodosController#index as HTML
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms)
+
+NameError (uninitialized constant TodosController::Todos):
+  app/controllers/todos_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (79.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (67.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (148.6ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:14:32 -0300
+Processing by TodosController#index as HTML
+  Rendered todos/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 185ms (Views: 92.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/assets/application-295722b658a6a8b92154bd8dd0f3f9ed.js?body=1" for ::1 at 2015-09-24 13:14:32 -0300
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:14:34 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 111ms (Views: 99.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:14:42 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sUV4rgje416w5cltvv6p9ccwwye2e0CpdjT/kDgYH9hIFzx8/lxWIot3XggQJ/eZZQv95/zEc+J7DOV0MeLI7w==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (1.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jcfausto@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["current_sign_in_at", "2015-09-24 16:14:42.535420"], ["sign_in_count", 2], ["updated_at", "2015-09-24 16:14:42.537367"], ["id", 1]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 122ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:14:42 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.2ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/index.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 86ms (Views: 84.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started GET "/assets/application-295722b658a6a8b92154bd8dd0f3f9ed.js?body=1" for ::1 at 2015-09-24 13:14:42 -0300
+
+
+Started POST "/todos" for ::1 at 2015-09-24 13:15:24 -0300
+Processing by TodosController#create as JSON
+  Parameters: {"utf8"=>"✓", "todo"=>{"description"=>"Criar uma aplicação de to-do list com rails e reactJS para poder registrar as coisas que eu quero fazer e as que estão incompletas"}}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "todos" ("description", "created_at", "updated_at") VALUES (?, ?, ?)  [["description", "Criar uma aplicação de to-do list com rails e reactJS para poder registrar as coisas que eu quero fazer e as que estão incompletas"], ["created_at", "2015-09-24 16:15:25.003745"], ["updated_at", "2015-09-24 16:15:25.003745"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  Rendered todos/show.json.jbuilder (0.3ms)
+Completed 201 Created in 25ms (Views: 18.9ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:15:28 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Vl7gkPdUkgBSqrg/tJhvCI3bh50D3dTDjieajl4TzblGqnu6y+cxXe/CN5P/la+bvkdtpNGLXnoDJcSkLnQ3CA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:15:28 -0300
+Processing by TodosController#index as HTML
+  Rendered todos/index.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 103ms (Views: 102.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/assets/application-295722b658a6a8b92154bd8dd0f3f9ed.js?body=1" for ::1 at 2015-09-24 13:15:28 -0300
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:15:29 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.4.1/app/views/devise/sessions/new.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 94ms (Views: 92.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:15:34 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Lrb8jWhgG5u5sFfvwQ5dxFOaQs4p1IG0HCZgPNGnGUtthl7ysxuTzVVkrpjSwf44GtHO87ZE4gGOaUyFdFhVkw==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jcfausto@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-09-24 16:14:42.535420"], ["current_sign_in_at", "2015-09-24 16:15:34.762291"], ["sign_in_count", 3], ["updated_at", "2015-09-24 16:15:34.763380"], ["id", 1]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 116ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:15:34 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.2ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 78ms (Views: 77.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:15:34 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:15:34 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:15:34 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:15:34 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:15:34 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:15:34 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:15:34 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:15:35 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:15:35 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:15:35 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:15:35 -0300
+
+
+Started GET "/assets/application-295722b658a6a8b92154bd8dd0f3f9ed.js?body=1" for ::1 at 2015-09-24 13:15:35 -0300
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:15:37 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"T2gmRBYpY9nBqKdpnaO7KU3tnNvqdOZo/f9ufasb0ONrhDUsRRgOxIJE9ttnlQnwunOUcGDj/8y43RxMhjNEcw=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:15:37 -0300
+Processing by TodosController#index as HTML
+  Rendered todos/index.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 80ms (Views: 79.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/assets/application-295722b658a6a8b92154bd8dd0f3f9ed.js?body=1" for ::1 at 2015-09-24 13:15:37 -0300
+
+
+Started GET "/users/sign_up" for ::1 at 2015-09-24 13:15:39 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.4.1/app/views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.4.1/app/views/devise/registrations/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 127ms (Views: 124.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-09-24 13:15:55 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"k4fkRE5D0Rb1WBvaD7TxnixXC0dvSaNVKcQqXDgzUNDSNgGRHIbPPwf3uih3+R40pcWP7LLzLLNkWDRGu3twnQ==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mUser Exists (0.2ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'me@jcfausto.com' LIMIT 1[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["email", "me@jcfausto.com"], ["encrypted_password", "$2a$10$NA/PNmZA0UN7MEnuX.nWl.Y.8Tu8NfUCZj6.MKVa6r.YAqnaioKLW"], ["created_at", "2015-09-24 16:15:55.707949"], ["updated_at", "2015-09-24 16:15:55.707949"]]
+  [1m[36m (2.6ms)[0m  [1mcommit transaction[0m
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "last_sign_in_ip" = ?, "current_sign_in_ip" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-09-24 16:15:55.713885"], ["current_sign_in_at", "2015-09-24 16:15:55.713885"], ["last_sign_in_ip", "::1"], ["current_sign_in_ip", "::1"], ["sign_in_count", 1], ["updated_at", "2015-09-24 16:15:55.714645"], ["id", 2]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 125ms (ActiveRecord: 5.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:15:55 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mTodo Load (0.2ms)[0m  SELECT "todos".* FROM "todos"
+  Rendered todos/index.html.erb within layouts/application (3.3ms)
+Completed 200 OK in 97ms (Views: 95.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:15:55 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:15:55 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:15:55 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:15:55 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:15:56 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:15:56 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:15:56 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:15:56 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:15:56 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:15:56 -0300
+
+
+Started GET "/assets/application-295722b658a6a8b92154bd8dd0f3f9ed.js?body=1" for ::1 at 2015-09-24 13:15:56 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:15:56 -0300
+
+
+Started GET "/" for ::1 at 2015-09-24 13:16:13 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mTodo Load (0.4ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?  [["user_id", 2]]
+  Rendered todos/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 96ms (Views: 79.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started GET "/assets/application-295722b658a6a8b92154bd8dd0f3f9ed.js?body=1" for ::1 at 2015-09-24 13:16:13 -0300
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:16:15 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"9Iy1ZtU+ZlJmW1avh5mHDJ6zGEvb6LebFQhPcCM+GMu1PVCzh/t4e5T0913/1GimFyGc4AZSOH1YlFFqoHY4hg=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:16:15 -0300
+Processing by TodosController#index as HTML
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `todos' for nil:NilClass):
+  app/controllers/todos_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (6.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (72.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (65.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (142.2ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:17:58 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 337ms (Views: 335.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/application-0d3a07d6caff674d65e29268660acc3d.js?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:17:59 -0300
+
+
+Started GET "/" for ::1 at 2015-09-24 13:19:21 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 86ms (Views: 85.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:19:21 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:19:21 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:19:21 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:19:21 -0300
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:19:21 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:19:21 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:19:21 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:19:22 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:19:22 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:19:22 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:19:22 -0300
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:19:22 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:19:22 -0300
+
+
+Started GET "/assets/application-0d3a07d6caff674d65e29268660acc3d.js?body=1" for ::1 at 2015-09-24 13:19:22 -0300
+
+
+Started GET "/" for ::1 at 2015-09-24 13:19:32 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 123ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/assets/application-0d3a07d6caff674d65e29268660acc3d.js?body=1" for ::1 at 2015-09-24 13:19:32 -0300
+
+
+Started GET "/" for ::1 at 2015-09-24 13:21:13 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 111ms (Views: 110.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/jquery-87424c3c19e96d4fb033c10ebe21ec40.js?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/application-7b30b373f6291ccc94e81f5d0786b893.css?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/scaffolds-5b3e0d4c6ecbfec7be699ad659bcc4c5.css?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/todos-64e62ddc273c2f5847f30d698ca14b67.css?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/jquery_ujs-e27bd20a10d28155845a22d71ef94f2f.js?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/turbolinks-f87b3583ca50adb0488b031297f5580d.js?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/react-3d09abab756925833ef0363b7564bb7e.js?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/react_ujs-0537b5363d4c2b9c12c27e1ee53d9541.js?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/components/todo_list-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/components-7f70420b2ef07d531e123203f250bf63.js?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/pages-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/todos-fcec5b5a277ac7c20cc9f45a209a3bcd.js?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/assets/application-0d3a07d6caff674d65e29268660acc3d.js?body=1" for ::1 at 2015-09-24 13:21:13 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:21:34 -0300
+
+ActionController::RoutingError (uninitialized constant Todos):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (125.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (65.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (148.3ms)
+
+
+Started GET "/todos/" for ::1 at 2015-09-24 13:22:01 -0300
+
+ActionController::RoutingError (uninitialized constant Todos):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.0) lib/rack/etag.rb:24:in `call'
+  rack (1.6.0) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.0) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.0) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.1.2) lib/web_console/middleware.rb:37:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.0) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.0) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.0) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.0) lib/rack/lock.rb:17:in `call'
+  rack (1.6.0) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.0) lib/rack/handler/webrick.rb:89:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (127.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/console.js.erb within layouts/javascript (72.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.1.2/lib/web_console/templates/index.html.erb (155.5ms)
+
+
+Started GET "/todos/" for ::1 at 2015-09-24 13:22:13 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.6ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+ActionController::RoutingError (uninitialized constant Todos):
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `const_get'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:261:in `block in constantize'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `each'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `inject'
+  activesupport (4.2.1) lib/active_support/inflector/methods.rb:259:in `constantize'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:70:in `controller_reference'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:60:in `controller'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:39:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `catch'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_route.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/routes/_table.html.erb (10.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (15.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (141.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (67.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (150.2ms)
+
+
+Started GET "/todos/" for ::1 at 2015-09-24 13:22:39 -0300
+Processing by TodosController#index as HTML
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+NoMethodError (undefined method `todos' for nil:NilClass):
+  app/controllers/todos_controller.rb:7:in `index'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (8.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (4.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (86.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (70.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (148.6ms)
+
+
+Started GET "/todos/" for ::1 at 2015-09-24 13:24:03 -0300
+Processing by TodosController#index as HTML
+Completed 401 Unauthorized in 6ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:24:03 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (1.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (25.6ms)
+Completed 200 OK in 4602ms (Views: 4585.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/scaffolds.self-deb68efa16c384b3e90cca0154901b81f6c58ed18e0960ab9321762349f9f2cc.css?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/todos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/components/todo_list.self-7ef10cb6fa6ff22eb5b7dc8e61ae39f8406aeaa483f25107b586ce7b02a156d0.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/todos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/components/todo_list.self-7ef10cb6fa6ff22eb5b7dc8e61ae39f8406aeaa483f25107b586ce7b02a156d0.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/todos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-24 13:24:08 -0300
+
+
+Started GET "/" for ::1 at 2015-09-24 13:24:16 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 80ms (Views: 79.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:24:21 -0300
+Processing by TodosController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:24:21 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 96ms (Views: 94.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:24:30 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"kNlo/UTnNWm3XV8rfJhoRQg5LNW78ITvInhQ0otk66+wazxsF0FczqoxN9vDDU2VI4PLsEC74Rjvb3X02Ax8CA==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "me@jcfausto.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["current_sign_in_at", "2015-09-24 16:24:31.036792"], ["sign_in_count", 2], ["updated_at", "2015-09-24 16:24:31.038128"], ["id", 2]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 149ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:24:31 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mTodo Load (0.2ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered todos/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 113ms (Views: 88.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/todos" for ::1 at 2015-09-24 13:24:38 -0300
+Processing by TodosController#create as JSON
+  Parameters: {"utf8"=>"✓", "todo"=>{"description"=>"Mais um todo list"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "todos" ("description", "created_at", "updated_at") VALUES (?, ?, ?)  [["description", "Mais um todo list"], ["created_at", "2015-09-24 16:24:38.700090"], ["updated_at", "2015-09-24 16:24:38.700090"]]
+  [1m[36m (1.1ms)[0m  [1mcommit transaction[0m
+  Rendered todos/show.json.jbuilder (3.9ms)
+Completed 201 Created in 43ms (Views: 30.2ms | ActiveRecord: 2.0ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:24:40 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"vYvE9+EBWss1utnDX9geDA1oyCn8zPup3GqkLryKRnMTCkIBCakEJQmoaY5kBj8IHr+V9M4hCsvhNSrL8rXnIw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:24:40 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 90ms (Views: 89.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:24:43 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 101ms (Views: 100.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:24:50 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ayNib702FWFcFp7pcyEWVukL6f4AHTdhWb3WRTRYe+2CO0phlS/ytup0oveYUOsQlvefURjODasqRzIFWz2K5w==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jcfausto@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-09-24 16:15:34.762291"], ["current_sign_in_at", "2015-09-24 16:24:50.320330"], ["sign_in_count", 4], ["updated_at", "2015-09-24 16:24:50.321399"], ["id", 1]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 121ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:24:50 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.0ms)
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 78ms (Views: 77.2ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:26:08 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 323ms (Views: 317.9ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/scaffolds.self-deb68efa16c384b3e90cca0154901b81f6c58ed18e0960ab9321762349f9f2cc.css?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/todos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/components/todo_list.self-7ef10cb6fa6ff22eb5b7dc8e61ae39f8406aeaa483f25107b586ce7b02a156d0.js?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/todos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:26:09 -0300
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:26:10 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uohaBdndxjU32eUhMbHdFkQ/ps5QClpQZ1YzYTfoLHuXhp0cADVqqCh6LU2I0AdMikjQKK0UQVDAxHp9dkmEXw=="}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 7ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:26:10 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 119ms (Views: 118.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:26:12 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 129ms (Views: 126.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:26:17 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0ix4uxFwYHwEAxRPoxo3Y2xj6K5iHzR2g3ppCrb97OxE+vC4jGMzNOmsQ0rPuq/GvfqSMnORuor7h5OtAvXa9w==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jcfausto@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-09-24 16:24:50.320330"], ["current_sign_in_at", "2015-09-24 16:26:17.613503"], ["sign_in_count", 5], ["updated_at", "2015-09-24 16:26:17.614520"], ["id", 1]]
+  [1m[36m (2.3ms)[0m  [1mcommit transaction[0m
+Completed 500 Internal Server Error in 113ms (ActiveRecord: 3.0ms)
+
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"todos"} missing required keys: [:id]):
+  app/controllers/application_controller.rb:7:in `after_sign_in_path_for'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (84.2ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (63.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (147.1ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:27:34 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0ix4uxFwYHwEAxRPoxo3Y2xj6K5iHzR2g3ppCrb97OxE+vC4jGMzNOmsQ0rPuq/GvfqSMnORuor7h5OtAvXa9w==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jcfausto@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-09-24 16:26:17.613503"], ["current_sign_in_at", "2015-09-24 16:27:34.372644"], ["sign_in_count", 6], ["updated_at", "2015-09-24 16:27:34.374557"], ["id", 1]]
+  [1m[36m (0.9ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 145ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:27:34 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 134ms (Views: 126.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/scaffolds.self-deb68efa16c384b3e90cca0154901b81f6c58ed18e0960ab9321762349f9f2cc.css?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/todos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/components/todo_list.self-7ef10cb6fa6ff22eb5b7dc8e61ae39f8406aeaa483f25107b586ce7b02a156d0.js?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/todos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-24 13:27:34 -0300
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:27:37 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"wSCYDDuXgWDI/r5xQVOojEnNe2bEHuIEcwYJD+ZfI5tQqmQkgSZDWUsvmBWXNcoyy2xNYpotdOGIf5DYxpfV/A=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:27:37 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 91ms (Views: 89.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:27:38 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 106ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:27:43 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1VrOazE+Tj7s/VzHIrIsY9ZnxFjcNizDDVE4MBUuXICxmuyOZMQW9W42m8TShJQwTaAT6362Kh8tJBr/7WgwSw==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "me@jcfausto.com"]]
+Completed 401 Unauthorized in 102ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1VrOazE+Tj7s/VzHIrIsY9ZnxFjcNizDDVE4MBUuXICxmuyOZMQW9W42m8TShJQwTaAT6362Kh8tJBr/7WgwSw==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 185ms (Views: 82.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:27:48 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BvTFSLu7bcYGF+dhNz8kqjTmZH9yaRmQtqh1xDWNwMViNOet7kE1DYTcIGLHCZz5ryGzzNDpH0yW3VcLzcusDg==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "me@jcfausto.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-09-24 16:24:31.036792"], ["current_sign_in_at", "2015-09-24 16:27:48.589653"], ["sign_in_count", 3], ["updated_at", "2015-09-24 16:27:48.590676"], ["id", 2]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 123ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:27:48 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered todos/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 82ms (Views: 79.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:27:58 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Pe+wy3MYIoO1zzqrLdmEFwKEur4yFSKsneiLVTuAJXax+Yh73DNce3BBtSO3O1gJ1wzWIclJm+BDUuB7RmFSGA=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:27:58 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 86ms (Views: 84.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:27:59 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 86ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:28:05 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MNtbzJoXREWeiRiO4DGv5B4i7aX+7tWqivPYJlgA0ZVFCy2hWPms0Zugbe3nEDL8inljaTLFzggHaq4S2tw0BA==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jcfausto@gmail.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-09-24 16:27:34.372644"], ["current_sign_in_at", "2015-09-24 16:28:05.875244"], ["sign_in_count", 7], ["updated_at", "2015-09-24 16:28:05.876367"], ["id", 1]]
+  [1m[35m (2.4ms)[0m  commit transaction
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 120ms (ActiveRecord: 3.1ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:28:05 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.1ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 99ms (Views: 96.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:28:53 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.2ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 131ms (Views: 104.6ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/todos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/scaffolds.self-deb68efa16c384b3e90cca0154901b81f6c58ed18e0960ab9321762349f9f2cc.css?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/components/todo_list.self-7ef10cb6fa6ff22eb5b7dc8e61ae39f8406aeaa483f25107b586ce7b02a156d0.js?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/todos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-24 13:28:53 -0300
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:28:55 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aA/tSFO80CrZrN9HfyfDdla88EXqFkXjyJMEps1RWq+v/IW1uYjVKzJTNHjRSlEwsEYi9FyWNiShvvNaUWhjTg=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:28:55 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 79ms (Views: 78.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:28:56 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 109ms (Views: 107.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:29:02 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XHKEczcWTnHsGjXhTbMN1xD6tMQZLKDzQ+mlCxk/9RqPDyRr3XF47piDf/IqIQ47XaQQu18Skf8vhRtjGy5eZg==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "me@jcfausto.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-09-24 16:27:48.589653"], ["current_sign_in_at", "2015-09-24 16:29:02.991790"], ["sign_in_count", 4], ["updated_at", "2015-09-24 16:29:02.992838"], ["id", 2]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 126ms (ActiveRecord: 3.7ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:29:03 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered todos/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 82ms (Views: 79.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:29:15 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mTodo Load (0.2ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 2]]
+  Rendered todos/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 635ms (Views: 572.9ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/todos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/scaffolds.self-deb68efa16c384b3e90cca0154901b81f6c58ed18e0960ab9321762349f9f2cc.css?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/components/todo_list.self-7ef10cb6fa6ff22eb5b7dc8e61ae39f8406aeaa483f25107b586ce7b02a156d0.js?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/todos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-24 13:29:16 -0300
+
+
+Started POST "/todos" for ::1 at 2015-09-24 13:29:20 -0300
+Processing by TodosController#create as JSON
+  Parameters: {"utf8"=>"✓", "todo"=>{"description"=>"Um todo qualquer"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "todos" ("description", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["description", "Um todo qualquer"], ["user_id", 2], ["created_at", "2015-09-24 16:29:20.272342"], ["updated_at", "2015-09-24 16:29:20.272342"]]
+  [1m[36m (1.2ms)[0m  [1mcommit transaction[0m
+  Rendered todos/show.json.jbuilder (4.1ms)
+Completed 201 Created in 39ms (Views: 17.8ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:29:32 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"m7oKCVDWmuhUCB4Zw7Kle1U8JUHUHIXaDXeck24pY2ygOui0zDmfcWG/nW28tFNKANV1J0LCKmiS9R/0TbrErQ=="}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 22ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:29:32 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 93ms (Views: 92.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:29:34 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (1.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (29.1ms)
+Completed 200 OK in 117ms (Views: 113.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:29:38 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9IB5INf+46uKPbJQSfrnxtmScJDRDmIg+7UbCnrXgZ5cNku/LTltFd20Z45gVQOCN81H7MY0r6r8vej3DrC/Fg==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "me@jcfausto.com"]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?[0m  [["last_sign_in_at", "2015-09-24 16:29:02.991790"], ["current_sign_in_at", "2015-09-24 16:29:38.825522"], ["sign_in_count", 5], ["updated_at", "2015-09-24 16:29:38.826578"], ["id", 2]]
+  [1m[35m (1.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 130ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:29:38 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35mTodo Load (0.2ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?  [["user_id", 2]]
+  Rendered todos/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 84ms (Views: 81.5ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:29:40 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"dzTmKjYFE1HmFTqq+c+hb7UJh0gMAuLjZJrOgiHsyL4/wZi8qaXCHRKGyvtKfNLRHjEuf6nlmrQYI+osXukEvQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:29:40 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 85ms (Views: 84.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:29:42 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 98ms (Views: 96.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:29:47 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qCIYVoOyABgTebZvhKlYaeLQybBQakG7nVTGLMGtUMNge7gwjXVPDXQ7eKIUoRqweoIVoeddXq8kzR6s7LSFbQ==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jcfausto@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-09-24 16:28:05.875244"], ["current_sign_in_at", "2015-09-24 16:29:47.404078"], ["sign_in_count", 8], ["updated_at", "2015-09-24 16:29:47.405553"], ["id", 1]]
+  [1m[36m (3.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 113ms (ActiveRecord: 4.2ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:29:47 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 82ms (Views: 79.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/todos" for ::1 at 2015-09-24 13:29:56 -0300
+Processing by TodosController#create as JSON
+  Parameters: {"utf8"=>"✓", "todo"=>{"description"=>"Mais um todo qualquer do jcfausto"}}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "todos" ("description", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["description", "Mais um todo qualquer do jcfausto"], ["user_id", 1], ["created_at", "2015-09-24 16:29:56.585501"], ["updated_at", "2015-09-24 16:29:56.585501"]]
+  [1m[36m (1.3ms)[0m  [1mcommit transaction[0m
+  Rendered todos/show.json.jbuilder (0.6ms)
+Completed 201 Created in 20ms (Views: 12.9ms | ActiveRecord: 1.8ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:29:58 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"NcvQVqVSP03I1+XUjF5XCrj6Xu8MZh+BG5AlAxmLdFp/dLSr2Hz888BPeObLpV27ONa0W2ZNOlWmaWYBRfQufw=="}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:29:58 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 117ms (Views: 115.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:29:59 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 105ms (Views: 103.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:30:06 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/KTwof0VmvG3k67aLiVWtoy99/fTVjv0AzbzhD+HfnvqUAQGTQ/4+6jLMgGtV7LZ0Vt/yHdA8JQYvly2y09uwg==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "jcfausto@gmail.com"]]
+Completed 401 Unauthorized in 102ms (ActiveRecord: 0.1ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"/KTwof0VmvG3k67aLiVWtoy99/fTVjv0AzbzhD+HfnvqUAQGTQ/4+6jLMgGtV7LZ0Vt/yHdA8JQYvly2y09uwg==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 222ms (Views: 119.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:30:10 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Kw3A6t+OjAIhiUG0lBZIWW4+kLgdmnfnW7cLpiE74QU9+TRNb5TuCD7R3W8XZKw2M9gYh7mMvIdAP6SU1fPxvA==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jcfausto@gmail.com"]]
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-09-24 16:29:47.404078"], ["current_sign_in_at", "2015-09-24 16:30:10.722347"], ["sign_in_count", 9], ["updated_at", "2015-09-24 16:30:10.723477"], ["id", 1]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 115ms (ActiveRecord: 2.9ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:30:10 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.2ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 84ms (Views: 81.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:31:14 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 92ms (Views: 89.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/todos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/scaffolds.self-deb68efa16c384b3e90cca0154901b81f6c58ed18e0960ab9321762349f9f2cc.css?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/components/todo_list.self-7ef10cb6fa6ff22eb5b7dc8e61ae39f8406aeaa483f25107b586ce7b02a156d0.js?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started GET "/assets/todos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:31:14 -0300
+
+
+Started PATCH "/todos/5/complete" for ::1 at 2015-09-24 13:31:22 -0300
+Processing by TodosController#complete as */*
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = ? AND "todos"."id" = ? LIMIT 1[0m  [["user_id", 1], ["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.4ms)[0m  [1mUPDATE "todos" SET "completed_at" = ?, "updated_at" = ? WHERE "todos"."id" = ?[0m  [["completed_at", "2015-09-24 16:31:22.190530"], ["updated_at", "2015-09-24 16:31:22.191453"], ["id", 5]]
+  [1m[35m (1.2ms)[0m  commit transaction
+Completed 200 OK in 10ms (Views: 0.8ms | ActiveRecord: 2.2ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:31:25 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"B1sQPQI7wPq/CPPPt3itT0nZnpiwguE4V3RHiw9QWdKkuZlM6sEvsd3BYRxhynMAzXXRf6B/VVW+z5aiVbX3IA=="}
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:31:25 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 94ms (Views: 93.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-24 13:31:27 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-24 13:31:32 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lfIP/fY9qd4S4cRe5+aa5bV7xC984Pe51swgwylGjZd7vth7vP8eIOsX+jo1cT512al/ciYdtHVUVjNS87KJ3w==", "user"=>{"email"=>"jcfausto@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["email", "jcfausto@gmail.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.8ms)[0m  UPDATE "users" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "users"."id" = ?  [["last_sign_in_at", "2015-09-24 16:30:10.722347"], ["current_sign_in_at", "2015-09-24 16:31:32.306387"], ["sign_in_count", 10], ["updated_at", "2015-09-24 16:31:32.307515"], ["id", 1]]
+  [1m[36m (2.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 119ms (ActiveRecord: 3.5ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-24 13:31:32 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.1ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.1ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = ?[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 85ms (Views: 82.7ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/todos/5/complete" for ::1 at 2015-09-24 13:31:38 -0300
+Processing by TodosController#complete as */*
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = ? AND "todos"."id" = ? LIMIT 1[0m  [["user_id", 1], ["id", 5]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mUPDATE "todos" SET "completed_at" = ?, "updated_at" = ? WHERE "todos"."id" = ?[0m  [["completed_at", nil], ["updated_at", "2015-09-24 16:31:38.842737"], ["id", 5]]
+  [1m[35m (1.0ms)[0m  commit transaction
+Completed 200 OK in 9ms (Views: 0.4ms | ActiveRecord: 1.9ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-24 13:31:51 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"61B7vNk7GsRVQaPlqCWmQ3igMHOqvKT/6gV02xOJ66/qmLh/qcxxCSAv/hOPeZ0+6gS/X4BX2sfTlp+mCHXJqA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = ?  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 6ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:31:51 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 75ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+  [1m[36m (58.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (2.5ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTodos (20150329035334)
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (35.9ms)[0m  [1mCREATE TABLE "todos" ("id" serial primary key, "description" character varying, "completed_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35mSQL (11.8ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150329035334"]]
+  [1m[36m (6.5ms)[0m  [1mCOMMIT[0m
+Migrating to DeviseCreateUsers (20150329035357)
+  [1m[35m (6.1ms)[0m  BEGIN
+DEPRECATION WARNING: `#timestamp` was called without specifying an option for `null`. In Rails 5, this behavior will change to `null: false`. You should manually specify `null: true` to prevent the behavior of your existing migrations from changing. (called from block in change at /Users/jcfausto/code/rails/vrails/code/react-todolist/db/migrate/20150329035357_devise_create_users.rb:34)
+  [1m[36m (17.8ms)[0m  [1mCREATE TABLE "users" ("id" serial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" timestamp, "last_sign_in_at" timestamp, "current_sign_in_ip" character varying, "last_sign_in_ip" character varying, "created_at" timestamp, "updated_at" timestamp) [0m
+  [1m[35m (231.6ms)[0m  CREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")
+  [1m[36m (1.7ms)[0m  [1mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  [1m[35mSQL (8.0ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150329035357"]]
+  [1m[36m (2.2ms)[0m  [1mCOMMIT[0m
+Migrating to AddUserToTodo (20150924160940)
+  [1m[35m (11.6ms)[0m  BEGIN
+  [1m[36m (1.7ms)[0m  [1mALTER TABLE "todos" ADD "user_id" integer[0m
+  [1m[35m (1.4ms)[0m  CREATE  INDEX  "index_todos_on_user_id" ON "todos"  ("user_id")
+  [1m[36m (6.8ms)[0m  [1mALTER TABLE "todos" ADD CONSTRAINT "fk_rails_d94154aa95"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ($1)  [["version", "20150924160940"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (4.5ms)[0m  [1mSELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'todos'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+[0m
+  [1m[35m (2.0ms)[0m  SELECT t2.oid::regclass::text AS to_table, a1.attname AS column, a2.attname AS primary_key, c.conname AS name, c.confupdtype AS on_update, c.confdeltype AS on_delete
+FROM pg_constraint c
+JOIN pg_class t1 ON c.conrelid = t1.oid
+JOIN pg_class t2 ON c.confrelid = t2.oid
+JOIN pg_attribute a1 ON a1.attnum = c.conkey[1] AND a1.attrelid = t1.oid
+JOIN pg_attribute a2 ON a2.attnum = c.confkey[1] AND a2.attrelid = t2.oid
+JOIN pg_namespace t3 ON c.connamespace = t3.oid
+WHERE c.contype = 'f'
+  AND t1.relname = 'users'
+  AND t3.nspname = ANY (current_schemas(false))
+ORDER BY c.conname
+
+
+
+Started GET "/" for ::1 at 2015-09-24 13:37:55 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 550ms (Views: 536.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2015-09-24 13:38:17 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 92ms (Views: 91.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/todos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/scaffolds.self-deb68efa16c384b3e90cca0154901b81f6c58ed18e0960ab9321762349f9f2cc.css?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/components/todo_list.self-7ef10cb6fa6ff22eb5b7dc8e61ae39f8406aeaa483f25107b586ce7b02a156d0.js?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/todos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-24 13:38:17 -0300
+
+
+Started GET "/" for ::1 at 2015-09-24 13:38:24 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 125ms (Views: 124.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/todos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/scaffolds.self-deb68efa16c384b3e90cca0154901b81f6c58ed18e0960ab9321762349f9f2cc.css?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/components/todo_list.self-7ef10cb6fa6ff22eb5b7dc8e61ae39f8406aeaa483f25107b586ce7b02a156d0.js?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/todos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-24 13:38:24 -0300
+
+
+Started GET "/" for ::1 at 2015-09-24 13:38:35 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 92ms (Views: 91.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pages.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/scaffolds.self-deb68efa16c384b3e90cca0154901b81f6c58ed18e0960ab9321762349f9f2cc.css?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/todos.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/components/todo_list.self-7ef10cb6fa6ff22eb5b7dc8e61ae39f8406aeaa483f25107b586ce7b02a156d0.js?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/pages.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/todos.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2015-09-24 13:38:35 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-24 13:38:35 -0300
