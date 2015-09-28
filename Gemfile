@@ -50,3 +50,5 @@ end
 gem 'devise'
 gem 'react-rails', github: 'reactjs/react-rails'
 
+gem 'font-awesome-rails'
+

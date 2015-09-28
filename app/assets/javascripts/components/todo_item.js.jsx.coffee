@@ -68,6 +68,21 @@ Source: https://github.com/jcfausto/jcf-todolist-react-rails
     switch keyCode
       when 27 then this.handleScapeKey()
 
+  unmount: ->
+    node = this.getDOMNode()
+    React.unmountComponentAtNode(node)
+    $(node).remove()
+
+  handleDelete: (e) ->
+    e.preventDefault()
+    $.ajax(
+      method: "DELETE"
+      dataType: "JSON"  
+      url: "/todos/#{this.props.id}/"
+      success: =>
+        this.unmount()
+    )
+
   render: ->
     if this.state.editing == true
       `<form onSubmit={this.handleUpdate} ref="todoUpdateForm">
@@ -78,7 +93,10 @@ Source: https://github.com/jcfausto/jcf-todolist-react-rails
     else 
       `<li>
         <input type="checkbox" checked={this.state.completed} onChange={this.handleChange} />
+        
         <label onClick={this.handleClick} >
-          {this.state.description}
+          {this.state.description} |&nbsp;
         </label>
+        
+        <i className="fa fa-trash-o" onClick={this.handleDelete}></i>
       </li>`

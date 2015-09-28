@@ -13657,3 +13657,2288 @@ Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649
 
 
 Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:23:21 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:34:50 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.6ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (28.5ms)
+Completed 200 OK in 4719ms (Views: 4627.2ms | ActiveRecord: 10.6ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/main.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/components/todo_item.self-f39bc2f835a8788155803b214862fe133eb9cf1219ee7170c123dc4f2b1fb444.js?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:34:55 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:34:56 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:34:56 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:35:00 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.5ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 173ms (Views: 167.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/main.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/components/todo_item.self-f39bc2f835a8788155803b214862fe133eb9cf1219ee7170c123dc4f2b1fb444.js?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:35:00 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:35:29 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.4ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 142ms (Views: 137.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/main.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/components/todo_item.self-f39bc2f835a8788155803b214862fe133eb9cf1219ee7170c123dc4f2b1fb444.js?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:35:29 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:35:36 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.4ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (16.2ms)
+Completed 200 OK in 2951ms (Views: 2912.5ms | ActiveRecord: 6.2ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/main.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/components/todo_item.self-44f21a8c3d8561473bb4d61f106add429e4736448147ca6a87c3099d327e0cc0.js?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:35:40 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:38:21 -0300
+  [1m[36mActiveRecord::SchemaMigration Load (0.9ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (1.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.7ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (50.9ms)
+Completed 200 OK in 11169ms (Views: 11039.5ms | ActiveRecord: 9.2ms)
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/components/todo_item.self-f39bc2f835a8788155803b214862fe133eb9cf1219ee7170c123dc4f2b1fb444.js?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:38:33 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:39:26 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 2521ms (Views: 2473.1ms | ActiveRecord: 8.7ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:39:29 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:39:29 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:39:29 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:39:29 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:39:29 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:39:29 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:39:29 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:39:29 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:39:29 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:39:29 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:39:30 -0300
+
+
+Started GET "/assets/components/todo_item.self-7cf967fc49736b0ac40221b086e52b18e4819176b9f0894fbe4838029bd553c4.js?body=1" for ::1 at 2015-09-28 18:39:30 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:39:30 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:39:30 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:39:30 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:40:00 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.5ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 2997ms (Views: 2958.1ms | ActiveRecord: 5.9ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/components/todo_item.self-e6e57bcf193ce0b00d9ca7cc1b302342be22f8f38e26ea8a3ba63f5c946a4415.js?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:40:03 -0300
+
+
+Started GET "/assets/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2?v=4.4.0" for ::1 at 2015-09-28 18:40:04 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:40:59 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.5ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 2993ms (Views: 2945.9ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/components/todo_item.self-e6e57bcf193ce0b00d9ca7cc1b302342be22f8f38e26ea8a3ba63f5c946a4415.js?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:41:02 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:41:26 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.5ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (17.6ms)
+Completed 200 OK in 2914ms (Views: 2868.2ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:41:29 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:41:29 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:41:29 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:41:29 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:41:29 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:41:30 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:41:30 -0300
+
+
+Started GET "/assets/components/todo_item.self-1a912ecfa923dbdfd2a73ec0098b90f63fcce18522f12f283c7ff11781707d4b.js?body=1" for ::1 at 2015-09-28 18:41:30 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:41:30 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:41:30 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:41:30 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:41:30 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:41:30 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:41:30 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:41:30 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:41:47 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 2747ms (Views: 2703.0ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/components/todo_item.self-23e9c7a6f83007030ed232d0570fa8dc3d211316c7659e9a2931a1c41f601fa1.js?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:41:50 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:41:56 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 2822ms (Views: 2784.7ms | ActiveRecord: 5.7ms)
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/components/todo_item.self-23e9c7a6f83007030ed232d0570fa8dc3d211316c7659e9a2931a1c41f601fa1.js?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:41:59 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:42:12 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 2750ms (Views: 2716.8ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:42:15 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:42:15 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:42:15 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:42:15 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:42:15 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:42:15 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:42:15 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:42:15 -0300
+
+
+Started GET "/assets/components/todo_item.self-b9dc6c564d2005349385d23f62c8a55e6a27d17f8ab97753914a37cb3e2d7a08.js?body=1" for ::1 at 2015-09-28 18:42:15 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:42:16 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:42:16 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:42:16 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:42:16 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:42:16 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:42:16 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:43:51 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 2948ms (Views: 2906.6ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/components/todo_item.self-cc33648612d4916507be8a5e1cb9654557396486c9dacae852269acb915d152c.js?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:43:54 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:45:35 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 2846ms (Views: 2806.7ms | ActiveRecord: 5.3ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/components/todo_item.self-ec31829441f6b05745d02766ad19f15bc9918a4b43a26d60377db211be2b8085.js?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:45:39 -0300
+
+
+Started PATCH "/todos/1/destroy" for ::1 at 2015-09-28 18:45:42 -0300
+
+ActionController::RoutingError (No route matches [PATCH] "/todos/1/destroy"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (42.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (108.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (275.1ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:45:52 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (20.7ms)
+Completed 200 OK in 2866ms (Views: 2823.1ms | ActiveRecord: 5.4ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/components/todo_item.self-659c24b7ee3c75c4f6037612fb35f66f4b5b1c0340d7db26d196019cce3a1ea5.js?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:45:55 -0300
+
+
+Started POST "/todos/1/destroy" for ::1 at 2015-09-28 18:45:58 -0300
+
+ActionController::RoutingError (No route matches [POST] "/todos/1/destroy"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (39.4ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (100.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (224.4ms)
+
+
+Started GET "/todos/1" for ::1 at 2015-09-28 18:46:09 -0300
+Processing by TodosController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = $1 AND "todos"."id" = $2 LIMIT 1[0m  [["user_id", 1], ["id", 1]]
+  Rendered todos/show.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 207ms (Views: 197.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/todos/1/edit" for ::1 at 2015-09-28 18:46:17 -0300
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.5ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = $1 AND "todos"."id" = $2 LIMIT 1[0m  [["user_id", 1], ["id", 1]]
+  Rendered todos/_form.html.erb (50.5ms)
+  Rendered todos/edit.html.erb within layouts/application (56.8ms)
+Completed 200 OK in 243ms (Views: 236.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/todos/1/edit" for ::1 at 2015-09-28 18:47:34 -0300
+Processing by TodosController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.6ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = $1 AND "todos"."id" = $2 LIMIT 1[0m  [["user_id", 1], ["id", 1]]
+  Rendered todos/_form.html.erb (14.9ms)
+  Rendered todos/edit.html.erb within layouts/application (22.6ms)
+Completed 200 OK in 3359ms (Views: 3250.3ms | ActiveRecord: 10.2ms)
+
+
+Started GET "/assets/components/todo_item.self-65fc756ef94377413e643ff51aa74d6fe155f93561c70fd408bfc6a8fa4242b8.js?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:47:38 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:47:40 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 273ms (Views: 266.7ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/todos/1" for ::1 at 2015-09-28 18:47:45 -0300
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = $1 AND "todos"."id" = $2 LIMIT 1[0m  [["user_id", 1], ["id", 1]]
+  [1m[35m (6.0ms)[0m  BEGIN
+  [1m[36mSQL (3.1ms)[0m  [1mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 1]]
+  [1m[35m (183.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 207ms (ActiveRecord: 193.0ms)
+
+
+Started DELETE "/todos" for ::1 at 2015-09-28 18:47:45 -0300
+
+ActionController::RoutingError (No route matches [DELETE] "/todos"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (36.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (97.9ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (221.0ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:47:56 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.4ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 2826ms (Views: 2789.4ms | ActiveRecord: 5.6ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:47:59 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:47:59 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/components/todo_item.self-4c242a374a86326f41827f759c74abaa7ffde8ef3835427c44bd746f63e182ad.js?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:48:00 -0300
+
+
+Started DELETE "/todos/2/" for ::1 at 2015-09-28 18:48:07 -0300
+Processing by TodosController#destroy as */*
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.5ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = $1 AND "todos"."id" = $2 LIMIT 1  [["user_id", 1], ["id", 2]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = $1  [["id", 2]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 12ms (ActiveRecord: 2.8ms)
+
+
+Started DELETE "/todos" for ::1 at 2015-09-28 18:48:07 -0300
+
+ActionController::RoutingError (No route matches [DELETE] "/todos"):
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/_trace.text.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/actionpack-4.2.1/lib/action_dispatch/middleware/templates/rescues/routing_error.text.erb (37.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (101.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (226.2ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:48:35 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 2848ms (Views: 2809.1ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:48:38 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:48:38 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:48:38 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:48:38 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:48:38 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:48:38 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:48:38 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:48:38 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:48:38 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:48:39 -0300
+
+
+Started GET "/assets/components/todo_item.self-d1ad6ae8a8a51b5369e3e5aba3724c3a6ae1db2f95256d3b1e9fd437a5e4a388.js?body=1" for ::1 at 2015-09-28 18:48:39 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:48:39 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:48:39 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:48:39 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:48:39 -0300
+
+
+Started DELETE "/todos/3/" for ::1 at 2015-09-28 18:48:41 -0300
+Processing by TodosController#destroy as JSON
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.7ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = $1 AND "todos"."id" = $2 LIMIT 1[0m  [["user_id", 1], ["id", 3]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 3]]
+  [1m[35m (1.5ms)[0m  COMMIT
+Completed 204 No Content in 14ms (ActiveRecord: 3.2ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:48:50 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.3ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 180ms (Views: 175.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:48:50 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:48:50 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/components/todo_item.self-d1ad6ae8a8a51b5369e3e5aba3724c3a6ae1db2f95256d3b1e9fd437a5e4a388.js?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:48:51 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:51:17 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.5ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (6.2ms)
+Completed 500 Internal Server Error in 863ms (ActiveRecord: 8.5ms)
+
+ExecJS::RuntimeError - SyntaxError: [stdin]:73:33: unexpected ::
+  execjs (2.6.0) lib/execjs/external_runtime.rb:84:in `extract_result'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:39:in `exec'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:21:in `eval'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:46:in `call'
+  coffee-script (2.4.1) lib/coffee_script.rb:78:in `compile'
+  sprockets (3.3.4) lib/sprockets/coffee_script_processor.rb:21:in `block in call'
+  sprockets (3.3.4) lib/sprockets/cache.rb:85:in `fetch'
+  sprockets (3.3.4) lib/sprockets/coffee_script_processor.rb:20:in `call'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.3.4) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.3.4) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.3.4) lib/sprockets/loader.rb:316:in `fetch_asset_from_dependency_cache'
+  sprockets (3.3.4) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.3.4) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.3.4) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.3.4) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.3.4) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.3.4) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.3.4) lib/sprockets/loader.rb:316:in `fetch_asset_from_dependency_cache'
+  sprockets (3.3.4) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.3.4) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.3.4) lib/sprockets/environment.rb:30:in `find_asset'
+  sprockets (3.3.4) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:230:in `lookup_asset_for_path'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:190:in `check_errors_for'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:137:in `block in javascript_include_tag'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:136:in `javascript_include_tag'
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3027016666351513483_70155312326360'
+  actionview (4.2.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/eb048fc5cd5544e4/variables" for ::1 at 2015-09-28 18:51:18 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:51:27 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.3ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 649ms (ActiveRecord: 4.9ms)
+
+ExecJS::RuntimeError - SyntaxError: [stdin]:73:33: unexpected ::
+  execjs (2.6.0) lib/execjs/external_runtime.rb:84:in `extract_result'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:39:in `exec'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:21:in `eval'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:46:in `call'
+  coffee-script (2.4.1) lib/coffee_script.rb:78:in `compile'
+  sprockets (3.3.4) lib/sprockets/coffee_script_processor.rb:21:in `block in call'
+  sprockets (3.3.4) lib/sprockets/cache.rb:85:in `fetch'
+  sprockets (3.3.4) lib/sprockets/coffee_script_processor.rb:20:in `call'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.3.4) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.3.4) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.3.4) lib/sprockets/loader.rb:316:in `fetch_asset_from_dependency_cache'
+  sprockets (3.3.4) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.3.4) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.3.4) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.3.4) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.3.4) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.3.4) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.3.4) lib/sprockets/loader.rb:316:in `fetch_asset_from_dependency_cache'
+  sprockets (3.3.4) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.3.4) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.3.4) lib/sprockets/environment.rb:30:in `find_asset'
+  sprockets (3.3.4) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:230:in `lookup_asset_for_path'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:190:in `check_errors_for'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:137:in `block in javascript_include_tag'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:136:in `javascript_include_tag'
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3027016666351513483_70155312326360'
+  actionview (4.2.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/ee956f120a3f6100/variables" for ::1 at 2015-09-28 18:51:28 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:51:37 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.4ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (3.1ms)
+Completed 500 Internal Server Error in 628ms (ActiveRecord: 5.0ms)
+
+ExecJS::RuntimeError - SyntaxError: [stdin]:74:7: unexpected (:
+  execjs (2.6.0) lib/execjs/external_runtime.rb:84:in `extract_result'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:39:in `exec'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:21:in `eval'
+  execjs (2.6.0) lib/execjs/external_runtime.rb:46:in `call'
+  coffee-script (2.4.1) lib/coffee_script.rb:78:in `compile'
+  sprockets (3.3.4) lib/sprockets/coffee_script_processor.rb:21:in `block in call'
+  sprockets (3.3.4) lib/sprockets/cache.rb:85:in `fetch'
+  sprockets (3.3.4) lib/sprockets/coffee_script_processor.rb:20:in `call'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.3.4) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.3.4) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.3.4) lib/sprockets/loader.rb:316:in `fetch_asset_from_dependency_cache'
+  sprockets (3.3.4) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.3.4) lib/sprockets/bundle.rb:23:in `block in call'
+  sprockets (3.3.4) lib/sprockets/utils.rb:183:in `dfs'
+  sprockets (3.3.4) lib/sprockets/bundle.rb:24:in `call'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:75:in `call_processor'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:57:in `block in call_processors'
+  sprockets (3.3.4) lib/sprockets/processor_utils.rb:56:in `call_processors'
+  sprockets (3.3.4) lib/sprockets/loader.rb:134:in `load_from_unloaded'
+  sprockets (3.3.4) lib/sprockets/loader.rb:60:in `block in load'
+  sprockets (3.3.4) lib/sprockets/loader.rb:316:in `fetch_asset_from_dependency_cache'
+  sprockets (3.3.4) lib/sprockets/loader.rb:44:in `load'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:20:in `block in initialize'
+  sprockets (3.3.4) lib/sprockets/cached_environment.rb:47:in `load'
+  sprockets (3.3.4) lib/sprockets/base.rb:66:in `find_asset'
+  sprockets (3.3.4) lib/sprockets/environment.rb:30:in `find_asset'
+  sprockets (3.3.4) lib/sprockets/base.rb:92:in `[]'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:230:in `lookup_asset_for_path'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:190:in `check_errors_for'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:137:in `block in javascript_include_tag'
+  sprockets-rails (2.3.3) lib/sprockets/rails/helper.rb:136:in `javascript_include_tag'
+  app/views/layouts/application.html.erb:6:in `_app_views_layouts_application_html_erb__3027016666351513483_70155312326360'
+  actionview (4.2.1) lib/action_view/template.rb:145:in `block in render'
+  activesupport (4.2.1) lib/active_support/notifications.rb:166:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:333:in `instrument'
+  actionview (4.2.1) lib/action_view/template.rb:143:in `render'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:66:in `render_with_layout'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:52:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/template_renderer.rb:14:in `render'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:42:in `render_template'
+  actionview (4.2.1) lib/action_view/renderer/renderer.rb:23:in `render'
+  actionview (4.2.1) lib/action_view/rendering.rb:100:in `_render_template'
+  actionpack (4.2.1) lib/action_controller/metal/streaming.rb:217:in `_render_template'
+  actionview (4.2.1) lib/action_view/rendering.rb:83:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:32:in `render_to_body'
+  actionpack (4.2.1) lib/action_controller/metal/renderers.rb:37:in `render_to_body'
+  actionpack (4.2.1) lib/abstract_controller/rendering.rb:25:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:16:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block (2 levels) in render'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `block in ms'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/benchmark.rb:303:in `realtime'
+  activesupport (4.2.1) lib/active_support/core_ext/benchmark.rb:12:in `ms'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:44:in `block in render'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:87:in `cleanup_view_runtime'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:25:in `cleanup_view_runtime'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:43:in `render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:10:in `default_render'
+  actionpack (4.2.1) lib/action_controller/metal/implicit_render.rb:5:in `send_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:198:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rendering.rb:10:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:20:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:117:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:555:in `block (2 levels) in compile'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:505:in `call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:92:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_process_action_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/abstract_controller/callbacks.rb:19:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/rescue.rb:29:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `block in instrument'
+  activesupport (4.2.1) lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+  activesupport (4.2.1) lib/active_support/notifications.rb:164:in `instrument'
+  actionpack (4.2.1) lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+  actionpack (4.2.1) lib/action_controller/metal/params_wrapper.rb:250:in `process_action'
+  activerecord (4.2.1) lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+  actionpack (4.2.1) lib/abstract_controller/base.rb:137:in `process'
+  actionview (4.2.1) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.1) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.1) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.1) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.1) lib/action_dispatch/routing/route_set.rb:819:in `call'
+  warden (1.2.3) lib/warden/manager.rb:35:in `block in call'
+  warden (1.2.3) lib/warden/manager.rb:34:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:25:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.1) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:649:in `call'
+  activerecord (4.2.1) lib/active_record/migration.rb:378:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:88:in `_run_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:776:in `_run_call_callbacks'
+  activesupport (4.2.1) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:84:in `protected_app_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:79:in `better_errors_call'
+  better_errors (2.1.1) lib/better_errors/middleware.rb:57:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.2.1) lib/web_console/middleware.rb:39:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.1) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.1) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.1) lib/action_dispatch/middleware/static.rb:113:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.1) lib/rails/engine.rb:518:in `call'
+  railties (4.2.1) lib/rails/application.rb:164:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/rvm/rubies/ruby-2.2.2/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+
+Started POST "/__better_errors/3cf1f670765faa1f/variables" for ::1 at 2015-09-28 18:51:38 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:51:44 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.3ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 2909ms (Views: 2872.6ms | ActiveRecord: 4.4ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/components/todo_item.self-4436e799bd1a94664dca254014a4ba76ad22cb7520a6e68cd20e2f6a5863e07e.js?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:51:47 -0300
+
+
+Started POST "/todos" for ::1 at 2015-09-28 18:51:51 -0300
+Processing by TodosController#create as JSON
+  Parameters: {"utf8"=>"✓", "todo"=>{"description"=>"asdf"}}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.1ms)[0m  BEGIN
+  [1m[36mSQL (9.2ms)[0m  [1mINSERT INTO "todos" ("description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["description", "asdf"], ["user_id", 1], ["created_at", "2015-09-28 21:51:51.757481"], ["updated_at", "2015-09-28 21:51:51.757481"]]
+  [1m[35m (1.0ms)[0m  COMMIT
+  Rendered todos/show.json.jbuilder (15.4ms)
+Completed 201 Created in 75ms (Views: 36.3ms | ActiveRecord: 11.7ms)
+
+
+Started DELETE "/todos/4/" for ::1 at 2015-09-28 18:51:53 -0300
+Processing by TodosController#destroy as JSON
+  Parameters: {"id"=>"4"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.4ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = $1 AND "todos"."id" = $2 LIMIT 1  [["user_id", 1], ["id", 4]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = $1  [["id", 4]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 10ms (ActiveRecord: 2.6ms)
+
+
+Started POST "/todos" for ::1 at 2015-09-28 18:51:56 -0300
+Processing by TodosController#create as JSON
+  Parameters: {"utf8"=>"✓", "todo"=>{"description"=>"asdfasd"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "todos" ("description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "asdfasd"], ["user_id", 1], ["created_at", "2015-09-28 21:51:56.653112"], ["updated_at", "2015-09-28 21:51:56.653112"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered todos/show.json.jbuilder (0.4ms)
+Completed 201 Created in 28ms (Views: 18.6ms | ActiveRecord: 1.6ms)
+
+
+Started POST "/todos" for ::1 at 2015-09-28 18:51:57 -0300
+Processing by TodosController#create as JSON
+  Parameters: {"utf8"=>"✓", "todo"=>{"description"=>"asdfasdasdfasdf"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "todos" ("description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "asdfasdasdfasdf"], ["user_id", 1], ["created_at", "2015-09-28 21:51:57.514626"], ["updated_at", "2015-09-28 21:51:57.514626"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  Rendered todos/show.json.jbuilder (0.3ms)
+Completed 201 Created in 28ms (Views: 17.9ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:51:58 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 171ms (Views: 166.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/components/todo_item.self-4436e799bd1a94664dca254014a4ba76ad22cb7520a6e68cd20e2f6a5863e07e.js?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:51:59 -0300
+
+
+Started DELETE "/todos/5/" for ::1 at 2015-09-28 18:52:01 -0300
+Processing by TodosController#destroy as JSON
+  Parameters: {"id"=>"5"}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = $1 AND "todos"."id" = $2 LIMIT 1[0m  [["user_id", 1], ["id", 5]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (0.4ms)[0m  [1mDELETE FROM "todos" WHERE "todos"."id" = $1[0m  [["id", 5]]
+  [1m[35m (6.1ms)[0m  COMMIT
+Completed 204 No Content in 17ms (ActiveRecord: 7.3ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:52:02 -0300
+Processing by TodosController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.3ms)[0m  SELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 170ms (Views: 164.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/components/todo_item.self-4436e799bd1a94664dca254014a4ba76ad22cb7520a6e68cd20e2f6a5863e07e.js?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:52:03 -0300
+
+
+Started DELETE "/todos/6/" for ::1 at 2015-09-28 18:52:04 -0300
+Processing by TodosController#destroy as JSON
+  Parameters: {"id"=>"6"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.3ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = $1 AND "todos"."id" = $2 LIMIT 1  [["user_id", 1], ["id", 6]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.4ms)[0m  DELETE FROM "todos" WHERE "todos"."id" = $1  [["id", 6]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+Completed 204 No Content in 13ms (ActiveRecord: 1.8ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:53:21 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 3002ms (Views: 2969.7ms | ActiveRecord: 4.5ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:53:24 -0300
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:53:24 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:53:24 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:53:24 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:53:24 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:53:24 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:53:24 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:53:24 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:53:24 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:53:25 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:53:25 -0300
+
+
+Started GET "/assets/components/todo_item.self-1b69d801e3235682435aed904c2c076b178c31cdaeadaf45089655135e86969c.js?body=1" for ::1 at 2015-09-28 18:53:25 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:53:25 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:53:25 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:53:25 -0300
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-28 18:53:47 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"052T7JZJ8z9Yz+67buKd/iQ+SQG8fCrJCOQOPz1nsukJfQQoSb1Ut2MkdwOEJBjV/9JwFYW8sPmaSGj8aTFOfw=="}
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 20ms (ActiveRecord: 0.8ms)
+
+
+Started GET "/" for ::1 at 2015-09-28 18:53:47 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 209ms (Views: 207.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2015-09-28 18:53:50 -0300
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (3.1ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/registrations/new.html.erb within layouts/application (23.2ms)
+Completed 200 OK in 200ms (Views: 195.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2015-09-28 18:53:56 -0300
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uc0Rk6r+61yUYy/9ibBZE4yP+qTW5hs7H0TyHRRWImG3q5/4tzwd/XT2AKyQU7pwqn7ZOB25VxLcdwweB9srjA==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mUser Exists (23.1ms)[0m  SELECT  1 AS one FROM "users" WHERE "users"."email" = 'me@jcfausto.com' LIMIT 1
+  [1m[36m (0.9ms)[0m  [1mROLLBACK[0m
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/registrations/new.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 399ms (Views: 184.0ms | ActiveRecord: 24.2ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-28 18:53:58 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (2.6ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (27.0ms)
+Completed 200 OK in 282ms (Views: 279.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-28 18:54:10 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ntnczqy16SE8oHTHRO05AkC4JslTcp0y2l6kn1arp4aQv1KlsXcfgNw1W5ZdDtphZkkFVZgt0RsZbVqcRSauaw==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (17.8ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "me@jcfausto.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (2.2ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2, "updated_at" = $3 WHERE "users"."id" = $4  [["current_sign_in_at", "2015-09-28 21:54:10.633393"], ["sign_in_count", 2], ["updated_at", "2015-09-28 21:54:10.635558"], ["id", 1]]
+  [1m[36m (1.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 181ms (ActiveRecord: 21.4ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:54:10 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 199ms (Views: 193.5ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/todos" for ::1 at 2015-09-28 18:54:15 -0300
+Processing by TodosController#create as JSON
+  Parameters: {"utf8"=>"✓", "todo"=>{"description"=>"Item 1"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "todos" ("description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Item 1"], ["user_id", 1], ["created_at", "2015-09-28 21:54:15.634824"], ["updated_at", "2015-09-28 21:54:15.634824"]]
+  [1m[36m (0.5ms)[0m  [1mCOMMIT[0m
+  Rendered todos/show.json.jbuilder (0.5ms)
+Completed 201 Created in 43ms (Views: 19.3ms | ActiveRecord: 2.7ms)
+
+
+Started POST "/todos" for ::1 at 2015-09-28 18:54:17 -0300
+Processing by TodosController#create as JSON
+  Parameters: {"utf8"=>"✓", "todo"=>{"description"=>"Item 2"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "todos" ("description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Item 2"], ["user_id", 1], ["created_at", "2015-09-28 21:54:17.181960"], ["updated_at", "2015-09-28 21:54:17.181960"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  Rendered todos/show.json.jbuilder (0.5ms)
+Completed 201 Created in 28ms (Views: 18.2ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/todos" for ::1 at 2015-09-28 18:54:18 -0300
+Processing by TodosController#create as JSON
+  Parameters: {"utf8"=>"✓", "todo"=>{"description"=>"Item 3"}}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.6ms)[0m  INSERT INTO "todos" ("description", "user_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"  [["description", "Item 3"], ["user_id", 1], ["created_at", "2015-09-28 21:54:18.731585"], ["updated_at", "2015-09-28 21:54:18.731585"]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  Rendered todos/show.json.jbuilder (0.4ms)
+Completed 201 Created in 28ms (Views: 17.6ms | ActiveRecord: 2.6ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2015-09-28 18:54:20 -0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"LYqs06BblHL1HRNNzfJXqMnXkt9q+oN140/bSbN70XHL87xVcXOIbM3bYwpe3XPaWDzQ6o7rwHfMpMViivX13w=="}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35m (0.2ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2015-09-28 18:54:20 -0300
+Processing by PagesController#home as HTML
+  Rendered pages/home.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 185ms (Views: 184.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2015-09-28 18:54:22 -0300
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 240ms (Views: 237.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-28 18:54:28 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FR4BUkPpISawep31qlbOwbqYM9BwmAwSEbs3PajHP0WNui1pY55J0UfUmYe8mFBUU0euiKhKzn3N+pNN8KckLg==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "me@jcfausto.com"]]
+Completed 401 Unauthorized in 125ms (ActiveRecord: 0.5ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"FR4BUkPpISawep31qlbOwbqYM9BwmAwSEbs3PajHP0WNui1pY55J0UfUmYe8mFBUU0euiKhKzn3N+pNN8KckLg==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/shared/_links.html.erb (0.7ms)
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/devise-3.5.2/app/views/devise/sessions/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 306ms (Views: 177.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2015-09-28 18:54:33 -0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bilnXFxBVY2J+H8ToM/UoWJ731qLHA7YoKWUV8fWsnn2jUtnfDY9en5We2G2AUo0i6RCAlPOzLd85DAnn7apEg==", "user"=>{"email"=>"me@jcfausto.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "me@jcfausto.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.5ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3, "updated_at" = $4 WHERE "users"."id" = $5  [["last_sign_in_at", "2015-09-28 21:54:10.633393"], ["current_sign_in_at", "2015-09-28 21:54:33.802935"], ["sign_in_count", 3], ["updated_at", "2015-09-28 21:54:33.804480"], ["id", 1]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/todos
+Completed 302 Found in 151ms (ActiveRecord: 2.7ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:54:33 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 167ms (Views: 163.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:55:32 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 1049ms (Views: 1044.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/elements/_lists.self-61a1c536ee6a8441e9d6e03031086abee6e2285227db2bd431149cfb1e433e8b.css?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/main.self-101edf4742a622394916ac17159aec94cce27dbae2d036ac65686e6e6d6ccc21.css?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/components/todo_item.self-1b69d801e3235682435aed904c2c076b178c31cdaeadaf45089655135e86969c.js?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/assets/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2?v=4.4.0" for ::1 at 2015-09-28 18:55:34 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:55:50 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 950ms (Views: 945.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/main.self-929876290a837b9dbc85db49462e01bb1f1f200545c4400ba19d82a376358757.css?body=1" for ::1 at 2015-09-28 18:55:51 -0300
+
+
+Started GET "/assets/elements/_lists.self-a7749de98efc552aeef130f26c6cadbb7b9da0d72b652f6be700e73891989a2d.css?body=1" for ::1 at 2015-09-28 18:55:51 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:55:51 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:55:51 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:55:51 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:55:51 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:55:51 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:55:51 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:55:51 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:55:52 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:55:52 -0300
+
+
+Started GET "/assets/components/todo_item.self-1b69d801e3235682435aed904c2c076b178c31cdaeadaf45089655135e86969c.js?body=1" for ::1 at 2015-09-28 18:55:52 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:55:52 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:55:52 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:55:52 -0300
+
+
+Started GET "/assets/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2?v=4.4.0" for ::1 at 2015-09-28 18:55:52 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:56:10 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 278ms (Views: 256.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/main.self-cfc14131001682631123d1a51c0a8aeeed4e1dd067c7f10ccb535841f2de3281.css?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/components/todo_item.self-1b69d801e3235682435aed904c2c076b178c31cdaeadaf45089655135e86969c.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
