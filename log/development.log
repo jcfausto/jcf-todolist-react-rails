@@ -15942,3 +15942,112 @@ Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649
 
 
 Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:56:10 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:57:24 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (3.9ms)
+Completed 200 OK in 196ms (Views: 191.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/elements/_lists.self-a7749de98efc552aeef130f26c6cadbb7b9da0d72b652f6be700e73891989a2d.css?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/main.self-929876290a837b9dbc85db49462e01bb1f1f200545c4400ba19d82a376358757.css?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/components/todo_item.self-1b69d801e3235682435aed904c2c076b178c31cdaeadaf45089655135e86969c.js?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:57:24 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 18:58:26 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.4ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 1413ms (Views: 1378.5ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/elements/_lists.self-5b21ebc09664baa8c8747bfc3f60c8bf026f1703fc7db797f2299025610e1516.css?body=1" for ::1 at 2015-09-28 18:58:28 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 18:58:28 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 18:58:28 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 18:58:28 -0300
+
+
+Started GET "/assets/main.self-0140ebf956c7cb8d29255339c37bd6c8b4c1b3ce1dfd699890672b026ff299eb.css?body=1" for ::1 at 2015-09-28 18:58:28 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 18:58:28 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 18:58:28 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 18:58:28 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 18:58:28 -0300
+
+
+Started GET "/assets/components/todo_app.self-a3403d54f07047cf8adefe0d5339ec544acf9bdb9de33d6625400dc5b24191fe.js?body=1" for ::1 at 2015-09-28 18:58:28 -0300
+
+
+Started GET "/assets/components/todo_form.self-fa8e3a5cd9467263dc3b8113e22f71db5693813892a9edb6ee21ad169d95026c.js?body=1" for ::1 at 2015-09-28 18:58:28 -0300
+
+
+Started GET "/assets/components/todo_item.self-1b69d801e3235682435aed904c2c076b178c31cdaeadaf45089655135e86969c.js?body=1" for ::1 at 2015-09-28 18:58:29 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 18:58:29 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 18:58:29 -0300
+
+
+Started GET "/assets/components/todo_list.self-a5965e8f7216b3e7b38411b36d548cb0b0126484f1cbd5596fe39570d5247b43.js?body=1" for ::1 at 2015-09-28 18:58:29 -0300
+
+
+Started GET "/assets/fontawesome-webfont-3c4a1bb7ce3234407184f0d80cc4dec075e4ad616b44dcc5778e1cfb1bc24019.woff2?v=4.4.0" for ::1 at 2015-09-28 18:58:29 -0300
