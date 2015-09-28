@@ -30,6 +30,13 @@ Source: https://github.com/jcfausto/jcf-todolist-react-rails
       </ul>`
 
 @TodoItem = React.createClass
+  
+  ## Defining component's propTypes in order to provide a more robust and reusable component.
+  propTypes:
+    placeholder: React.PropTypes.string,
+    description: React.PropTypes.string.isRequired,
+    completed: React.PropTypes.bool,
+    editing: React.PropTypes.bool
 
   getInitialState: ->
     {
