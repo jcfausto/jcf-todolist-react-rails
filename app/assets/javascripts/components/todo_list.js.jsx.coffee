@@ -1,3 +1,11 @@
+###
+TodoApp with Rails and ReacJS
+Released under the MIT License
+Date: 09-28-2015
+Author: Julio Cesar Fausto
+Source: https://github.com/jcfausto/jcf-todolist-react-rails
+###
+
 @TodoApp = React.createClass
   getInitialState: ->
     todos: this.props.todos
@@ -22,6 +30,7 @@
       </ul>`
 
 @TodoItem = React.createClass
+
   getInitialState: ->
     {
       description: this.props.description,
