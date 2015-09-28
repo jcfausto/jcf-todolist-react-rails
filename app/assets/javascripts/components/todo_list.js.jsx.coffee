@@ -38,6 +38,15 @@ Source: https://github.com/jcfausto/jcf-todolist-react-rails
     completed: React.PropTypes.bool,
     editing: React.PropTypes.bool
 
+  ## Defining default values for compoent's properties
+  getDefaultProps: ->
+    {
+      placeholder: "I need to do this...",
+      description: "I need to do this...", 
+      completed: false,
+      editing: false
+    }
+
   getInitialState: ->
     {
       description: this.props.description,

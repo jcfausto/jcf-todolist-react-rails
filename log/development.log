@@ -12457,3 +12457,71 @@ Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649
 
 
 Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 13:23:33 -0300
+
+
+Started GET "/todos" for ::1 at 2015-09-28 13:26:27 -0300
+Processing by TodosController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT "todos".* FROM "todos" WHERE "todos"."user_id" = $1[0m  [["user_id", 1]]
+  Rendered todos/index.html.erb within layouts/application (18.4ms)
+Completed 200 OK in 2401ms (Views: 2348.9ms | ActiveRecord: 6.9ms)
+
+
+Started GET "/assets/elements/_lists.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started GET "/assets/settings/_colors.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started GET "/assets/jquery_ujs.self-d456baa54c1fa6be2ec3711f0a72ddf7a5b2f34a6b4f515f33767d6207b7d4b3.js?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started GET "/assets/components/todo_list.self-ed60ca3b72726385ccd7417b62390779ef9083adc1494dd2415994342ab3e8ca.js?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started GET "/assets/main.self-5fbaddd1ef7d113c154fa6d7e063c95fa439ede957d37f4dfaab886797f7fa62.css?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started GET "/assets/jquery.self-a714331225dda820228db323939889f149aec0127aeb06255646b616ba1ca419.js?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started GET "/assets/components.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.js?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started GET "/assets/react_ujs.self-0833fe72a25fcb9cc0686328cc2aa88975f128bf379c265b61ad1a5e1113a400.js?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started GET "/assets/development/react.self-93bc62cb6c7b74ee7e5a2fcf623f3abbd365440bf90eba740c625f159078aa82.js?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started GET "/assets/application.self-44dc72337fbefc4f8c73fc8781b922cf9e4f99f8d068e6563c3820851d9390f6.js?body=1" for ::1 at 2015-09-28 13:26:30 -0300
+
+
+Started PATCH "/todos/2" for ::1 at 2015-09-28 13:26:40 -0300
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"description"=>"Aprender CoffeeScripts"}, "id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mTodo Load (0.3ms)[0m  [1mSELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = $1 AND "todos"."id" = $2 LIMIT 1[0m  [["user_id", 1], ["id", 2]]
+  [1m[35m (5.4ms)[0m  BEGIN
+  [1m[36mSQL (8.2ms)[0m  [1mUPDATE "todos" SET "description" = $1, "updated_at" = $2 WHERE "todos"."id" = $3[0m  [["description", "Aprender CoffeeScripts"], ["updated_at", "2015-09-28 16:26:40.316271"], ["id", 2]]
+  [1m[35m (268.4ms)[0m  COMMIT
+  Rendered todos/show.json.jbuilder (4.3ms)
+Completed 200 OK in 370ms (Views: 16.8ms | ActiveRecord: 282.6ms)
+
+
+Started PATCH "/todos/2" for ::1 at 2015-09-28 13:26:43 -0300
+Processing by TodosController#update as JSON
+  Parameters: {"todo"=>{"description"=>"Aprender CoffeeScript"}, "id"=>"2"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mTodo Load (0.3ms)[0m  SELECT  "todos".* FROM "todos" WHERE "todos"."user_id" = $1 AND "todos"."id" = $2 LIMIT 1  [["user_id", 1], ["id", 2]]
+  [1m[36m (0.1ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.3ms)[0m  UPDATE "todos" SET "description" = $1, "updated_at" = $2 WHERE "todos"."id" = $3  [["description", "Aprender CoffeeScript"], ["updated_at", "2015-09-28 16:26:43.356083"], ["id", 2]]
+  [1m[36m (1.5ms)[0m  [1mCOMMIT[0m
+  Rendered todos/show.json.jbuilder (0.2ms)
+Completed 200 OK in 19ms (Views: 10.7ms | ActiveRecord: 2.4ms)
